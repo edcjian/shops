@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.VideoMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.domain.Video">
+    <!--@mbg.generated-->
+    <!--@Table edu_video-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="course_id" jdbcType="CHAR" property="courseId" />
+    <result column="chapter_id" jdbcType="CHAR" property="chapterId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="video_source_id" jdbcType="VARCHAR" property="videoSourceId" />
+    <result column="video_original_name" jdbcType="VARCHAR" property="videoOriginalName" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="play_count" jdbcType="BIGINT" property="playCount" />
+    <result column="is_free" jdbcType="TINYINT" property="isFree" />
+    <result column="duration" jdbcType="FLOAT" property="duration" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="size" jdbcType="BIGINT" property="size" />
+    <result column="version" jdbcType="BIGINT" property="version" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, course_id, chapter_id, title, video_source_id, video_original_name, sort, play_count,
+    is_free, duration, `status`, `size`, version, gmt_create, gmt_modified
+  </sql>
+</mapper>
