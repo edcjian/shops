@@ -10,7 +10,7 @@ import java.util.List;
  * @since 2020/4/24
  */
 public interface VideoService {
-
+//nmd
     String uploadVideo(InputStream inputStream, String originalFilename);
 
     void removeVideo(String videoId) throws ClientException;
